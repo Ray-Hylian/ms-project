@@ -1,0 +1,25 @@
+server.port: ${port.config-server}
+  
+spring:
+  main.allow-bean-definition-overriding: true
+  application:
+    name: config
+  profiles:
+    active: vault
+  cloud.config:
+    enabled: false
+    server:
+      native.search-locations: '@propertiesPath@'
+      vault:
+        authentication: TOKEN
+        token: hvs.Hpg9DWZVSh88DyinPqYfsPJX
+        scheme: http
+        host: 127.0.0.1
+        port: 8200
+        backend: secret
+        defaultKey: application
+        kvVersion: 2
+        skipSslValidation: false
+        config:
+          order: 1
+  import: vault://secret/gateway

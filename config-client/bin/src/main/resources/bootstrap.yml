@@ -1,0 +1,9 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: configclient
+  cloud:
+    config:
+      token: hvs.Hpg9DWZVSh88DyinPqYfsPJX
+      uri: http://localhost:8888

@@ -1,0 +1,924 @@
+[15:45:20] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+org.yaml.snakeyaml.scanner.ScannerException: while scanning for the next token
+found character '@' that cannot start any token. (Do not use @ for indentation)
+ in 'reader', line 1, column 53:
+     ... server.native.search-locations: @propertiesPath@
+                                         ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:470)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:263)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:694)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:185)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116)
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:208)
+	at org.yaml.snakeyaml.composer.Composer.composeKeyNode(Composer.java:347)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:332)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:311)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:212)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:134)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:168)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:98)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:499)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:198)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:83)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:95)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:128)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:86)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:115)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:242)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:229)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:352)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:12)
+[15:48:49] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[15:48:49] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 3972 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[15:48:49] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[15:48:50] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[15:48:50] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 8080 (http)
+[15:48:50] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[15:48:50] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[15:48:50] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[15:48:50] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[15:48:50] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1356 ms
+[15:48:51] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+[15:48:51] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[15:48:51] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15:48:51] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 47 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.normalizeForDns(ConsulAutoRegistration.java:169)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.getInstanceId(ConsulAutoRegistration.java:161)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.registration(ConsulAutoRegistration.java:84)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistrationAutoConfiguration.consulRegistration(ConsulAutoServiceRegistrationAutoConfiguration.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 48 common frames omitted
+[15:50:09] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[15:50:09] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 23140 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[15:50:09] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[15:50:10] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[15:50:11] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 8080 (http)
+[15:50:11] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[15:50:11] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[15:50:11] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[15:50:11] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[15:50:11] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1277 ms
+[15:50:12] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+[15:50:12] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[15:50:12] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15:50:12] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 47 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.normalizeForDns(ConsulAutoRegistration.java:169)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.getInstanceId(ConsulAutoRegistration.java:161)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.registration(ConsulAutoRegistration.java:84)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistrationAutoConfiguration.consulRegistration(ConsulAutoServiceRegistrationAutoConfiguration.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 48 common frames omitted
+[15:52:49] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[15:52:49] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 21172 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[15:52:49] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[15:52:50] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[15:52:50] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 8080 (http)
+[15:52:50] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[15:52:50] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[15:52:50] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[15:52:50] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[15:52:50] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1285 ms
+[15:52:51] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+[15:52:51] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[15:52:51] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15:52:51] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 47 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.normalizeForDns(ConsulAutoRegistration.java:169)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.getInstanceId(ConsulAutoRegistration.java:161)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.registration(ConsulAutoRegistration.java:84)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistrationAutoConfiguration.consulRegistration(ConsulAutoServiceRegistrationAutoConfiguration.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 48 common frames omitted
+[15:54:32] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[15:54:32] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 14864 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[15:54:32] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[15:54:33] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[15:54:34] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 8080 (http)
+[15:54:34] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[15:54:34] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[15:54:34] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[15:54:34] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[15:54:34] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1302 ms
+[15:54:35] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+[15:54:35] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[15:54:35] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15:54:35] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 47 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.normalizeForDns(ConsulAutoRegistration.java:169)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.getInstanceId(ConsulAutoRegistration.java:161)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.registration(ConsulAutoRegistration.java:84)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistrationAutoConfiguration.consulRegistration(ConsulAutoServiceRegistrationAutoConfiguration.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 48 common frames omitted
+[15:56:02] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[15:56:02] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 18692 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[15:56:02] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[15:56:03] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[15:56:03] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 8080 (http)
+[15:56:03] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[15:56:03] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[15:56:03] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[15:56:03] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[15:56:03] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1329 ms
+[15:56:04] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[15:56:05] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[15:56:05] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-8080"]
+[15:56:05] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[15:56:05] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Pausing ProtocolHandler ["http-nio-8080"]
+[15:56:05] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[15:56:05] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Stopping ProtocolHandler ["http-nio-8080"]
+[15:56:05] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Destroying ProtocolHandler ["http-nio-8080"]
+[15:56:05] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15:56:05] [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40]: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[15:56:36] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[15:56:36] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 5604 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[15:56:36] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[15:56:37] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[15:56:37] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 8080 (http)
+[15:56:37] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[15:56:37] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[15:56:37] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[15:56:38] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[15:56:38] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1307 ms
+[15:56:39] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[15:56:39] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[15:56:39] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-8080"]
+[15:56:39] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[15:56:39] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Pausing ProtocolHandler ["http-nio-8080"]
+[15:56:39] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[15:56:39] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Stopping ProtocolHandler ["http-nio-8080"]
+[15:56:39] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Destroying ProtocolHandler ["http-nio-8080"]
+[15:56:39] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15:56:39] [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40]: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[15:57:15] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[15:57:16] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 21040 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[15:57:16] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[15:57:16] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[15:57:17] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 9000 (http)
+[15:57:17] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-9000"]
+[15:57:17] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[15:57:17] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[15:57:17] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[15:57:17] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1302 ms
+[15:57:18] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[15:57:18] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[15:57:18] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-9000"]
+[15:57:18] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 9000 (http) with context path ''
+[15:57:18] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='elk-9000', name='elk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=9000, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:9000/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[15:57:18] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 3.125 seconds (process running for 3.704)
+[15:57:23] [INFO] [http-nio-9000-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:57:23] [INFO] [http-nio-9000-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[15:57:23] [INFO] [http-nio-9000-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 1 ms
+[17:04:34] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+org.yaml.snakeyaml.constructor.DuplicateKeyException: while constructing a mapping
+ in 'reader', line 1, column 1:
+    spring.cloud.config.uri: '@confi ... 
+    ^
+found duplicate key spring.cloud.config.uri
+ in 'reader', line 17, column 1:
+    spring.cloud.config.uri: '@confi ... 
+    ^
+
+	at org.yaml.snakeyaml.constructor.SafeConstructor.processDuplicateKeys(SafeConstructor.java:129)
+	at org.yaml.snakeyaml.constructor.SafeConstructor.flattenMapping(SafeConstructor.java:81)
+	at org.yaml.snakeyaml.constructor.SafeConstructor.flattenMapping(SafeConstructor.java:76)
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:212)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:557)
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:600)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObjectNoCheck(BaseConstructor.java:270)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:253)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.constructObject(OriginTrackedYamlLoader.java:118)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:207)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:172)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:98)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:499)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:198)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:83)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:95)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:128)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:86)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:115)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:242)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:229)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:352)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:12)
+[17:05:21] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[17:05:21] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 16392 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[17:05:21] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[17:05:22] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[17:05:22] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 8080 (http)
+[17:05:22] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[17:05:22] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[17:05:22] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[17:05:22] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[17:05:22] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1417 ms
+[17:05:23] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[17:05:23] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[17:05:23] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-8080"]
+[17:05:23] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[17:05:24] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Pausing ProtocolHandler ["http-nio-8080"]
+[17:05:24] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[17:05:24] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Stopping ProtocolHandler ["http-nio-8080"]
+[17:05:24] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Destroying ProtocolHandler ["http-nio-8080"]
+[17:05:24] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[17:05:24] [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40]: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[17:08:29] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[17:08:29] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 21280 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[17:08:29] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[17:08:30] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[17:08:30] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 8080 (http)
+[17:08:30] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[17:08:30] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[17:08:30] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[17:08:30] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[17:08:30] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1394 ms
+[17:08:32] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+[17:08:32] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[17:08:32] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[17:08:32] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 47 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.normalizeForDns(ConsulAutoRegistration.java:169)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.getInstanceId(ConsulAutoRegistration.java:161)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.registration(ConsulAutoRegistration.java:84)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistrationAutoConfiguration.consulRegistration(ConsulAutoServiceRegistrationAutoConfiguration.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 48 common frames omitted
+[17:10:47] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[17:10:47] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 11336 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[17:10:47] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[17:10:48] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[17:10:48] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 8080 (http)
+[17:10:48] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[17:10:48] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[17:10:48] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[17:10:48] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[17:10:48] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1252 ms
+[17:10:49] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+[17:10:49] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[17:10:49] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[17:10:49] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 47 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.normalizeForDns(ConsulAutoRegistration.java:169)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.getInstanceId(ConsulAutoRegistration.java:161)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.registration(ConsulAutoRegistration.java:84)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistrationAutoConfiguration.consulRegistration(ConsulAutoServiceRegistrationAutoConfiguration.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 48 common frames omitted
+[17:13:18] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[17:13:19] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 23216 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[17:13:19] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[17:13:19] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[17:13:20] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 8080 (http)
+[17:13:20] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[17:13:20] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[17:13:20] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[17:13:20] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[17:13:20] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1296 ms
+[17:13:21] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+[17:13:21] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[17:13:21] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[17:13:21] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 47 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.normalizeForDns(ConsulAutoRegistration.java:169)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.getInstanceId(ConsulAutoRegistration.java:161)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.registration(ConsulAutoRegistration.java:84)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistrationAutoConfiguration.consulRegistration(ConsulAutoServiceRegistrationAutoConfiguration.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 48 common frames omitted
+[17:14:29] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[17:14:30] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 15896 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[17:14:30] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[17:14:31] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=b3dc6542-a77f-3040-a821-ccfa022f00f2
+[17:14:31] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 8080 (http)
+[17:14:31] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[17:14:31] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[17:14:31] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[17:14:31] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[17:14:31] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1626 ms
+[17:14:32] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+[17:14:32] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[17:14:32] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[17:14:32] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration': Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'consulAutoServiceRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'consulAutoServiceRegistration' parameter 3: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consulRegistration' defined in class path resource [org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration]: Factory method 'consulRegistration' threw exception with message: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 47 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Consul service ids must not be empty, must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen: null
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.normalizeForDns(ConsulAutoRegistration.java:169)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.getInstanceId(ConsulAutoRegistration.java:161)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoRegistration.registration(ConsulAutoRegistration.java:84)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistrationAutoConfiguration.consulRegistration(ConsulAutoServiceRegistrationAutoConfiguration.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 48 common frames omitted

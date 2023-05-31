@@ -1,0 +1,596 @@
+[11:19:54] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[11:19:54] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:51]: Starting MicroserviceELKApplication using Java 17.0.3 with PID 10244 (C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK)
+[11:19:54] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[11:19:55] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+java.lang.IllegalArgumentException: Could not find class [org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:333)
+	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:465)
+	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:390)
+	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:278)
+	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:193)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:106)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:81)
+	at org.springframework.context.annotation.AnnotationConfigUtils.attributesFor(AnnotationConfigUtils.java:301)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:102)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:81)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:160)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.microserviceELK.MicroserviceELKApplication.main(MicroserviceELKApplication.java:17)
+Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:283)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:323)
+	... 25 common frames omitted
+[11:21:02] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[11:21:02] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:51]: Starting MicroserviceELKApplication using Java 17.0.3 with PID 6004 (C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK)
+[11:21:02] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[11:21:03] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+java.lang.IllegalArgumentException: Could not find class [org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:333)
+	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:465)
+	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:390)
+	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:278)
+	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:193)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:106)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:81)
+	at org.springframework.context.annotation.AnnotationConfigUtils.attributesFor(AnnotationConfigUtils.java:301)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:102)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:81)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:160)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.microserviceELK.MicroserviceELKApplication.main(MicroserviceELKApplication.java:17)
+Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:283)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:323)
+	... 25 common frames omitted
+[11:22:00] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[11:22:00] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:51]: Starting MicroserviceELKApplication using Java 17.0.3 with PID 13484 (C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK)
+[11:22:00] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[11:22:02] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[11:22:02] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[11:22:02] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[11:22:02] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[11:22:02] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[11:22:02] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1548 ms
+[11:22:03] [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:592]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'consulDiscoveryProperties' defined in class path resource [org/springframework/cloud/consul/discovery/ConsulDiscoveryClientConfiguration.class]: Unsatisfied dependency expressed through method 'consulDiscoveryProperties' parameter 0: No qualifying bean of type 'org.springframework.cloud.commons.util.InetUtils' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[11:22:04] [WARN] [main] [zipkin2.reporter.AsyncReporter$BoundedAsyncReporter:342]: Timed out waiting for in-flight spans to send
+[11:22:04] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Stopping service [Tomcat]
+[11:22:04] [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82]: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[11:22:04] [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40]: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method consulDiscoveryProperties in org.springframework.cloud.consul.discovery.ConsulDiscoveryClientConfiguration required a bean of type 'org.springframework.cloud.commons.util.InetUtils' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.commons.util.InetUtils' in your configuration.
+
+[11:32:43] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[11:32:43] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:51]: Starting MicroserviceELKApplication using Java 17.0.3 with PID 15736 (C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK)
+[11:32:43] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[11:32:44] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+java.lang.IllegalArgumentException: Could not find class [org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:333)
+	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:465)
+	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:390)
+	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:278)
+	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:193)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:106)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:81)
+	at org.springframework.context.annotation.AnnotationConfigUtils.attributesFor(AnnotationConfigUtils.java:301)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:102)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:81)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:160)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.microserviceELK.MicroserviceELKApplication.main(MicroserviceELKApplication.java:17)
+Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:283)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:323)
+	... 25 common frames omitted
+[11:34:46] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[11:34:46] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:51]: Starting MicroserviceELKApplication using Java 17.0.3 with PID 2604 (C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK)
+[11:34:46] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[11:34:47] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+java.lang.IllegalArgumentException: Could not find class [org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:333)
+	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:465)
+	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:390)
+	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:278)
+	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:193)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:106)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:81)
+	at org.springframework.context.annotation.AnnotationConfigUtils.attributesFor(AnnotationConfigUtils.java:301)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:102)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:81)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:160)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.microserviceELK.MicroserviceELKApplication.main(MicroserviceELKApplication.java:15)
+Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:283)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:323)
+	... 25 common frames omitted
+[11:36:24] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:51]: Starting MicroserviceELKApplication using Java 17.0.3 with PID 1416 (C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK)
+[11:36:24] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[11:36:26] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[11:36:26] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[11:36:26] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[11:36:26] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[11:36:26] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[11:36:26] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1451 ms
+[11:36:27] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[11:36:27] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42960"]
+[11:36:27] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42960 (http) with context path ''
+[11:36:27] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:57]: Started MicroserviceELKApplication in 2.94 seconds (process running for 3.544)
+[11:36:36] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:51]: Starting MicroserviceELKApplication using Java 17.0.3 with PID 13216 (C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\microserviceELK)
+[11:36:36] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[11:36:38] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42961 (http)
+[11:36:38] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42961"]
+[11:36:38] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[11:36:38] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[11:36:38] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[11:36:38] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1401 ms
+[11:36:39] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[11:36:39] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42961"]
+[11:36:39] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42961 (http) with context path ''
+[11:36:39] [INFO] [main] [com.infotel.microserviceELK.MicroserviceELKApplication:57]: Started MicroserviceELKApplication in 2.903 seconds (process running for 3.488)
+[11:36:54] [INFO] [http-nio-42960-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11:36:54] [INFO] [http-nio-42960-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[11:36:54] [INFO] [http-nio-42960-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 2 ms
+[13:46:36] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 16668 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[13:46:36] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[13:46:37] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[13:46:37] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[13:46:37] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[13:46:37] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[13:46:37] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[13:46:37] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1464 ms
+[13:46:38] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[13:46:38] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42960"]
+[13:46:38] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42960 (http) with context path ''
+[13:46:38] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 3.14 seconds (process running for 3.702)
+[13:46:39] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 1804 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[13:46:39] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[13:46:40] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42961 (http)
+[13:46:40] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42961"]
+[13:46:40] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[13:46:40] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[13:46:40] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[13:46:40] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1292 ms
+[13:46:41] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[13:46:41] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42961"]
+[13:46:41] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42961 (http) with context path ''
+[13:46:41] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 2.873 seconds (process running for 3.732)
+[13:46:51] [INFO] [http-nio-42960-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[13:46:51] [INFO] [http-nio-42960-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[13:46:51] [INFO] [http-nio-42960-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 1 ms
+[13:49:22] [INFO] [http-nio-42961-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[13:49:22] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[13:49:22] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 1 ms
+[13:56:07] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 1964 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[13:56:07] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[13:56:09] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[13:56:09] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[13:56:09] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[13:56:09] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[13:56:09] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[13:56:09] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1547 ms
+[13:56:10] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[13:56:10] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42960"]
+[13:56:10] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42960 (http) with context path ''
+[13:56:10] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 3.119 seconds (process running for 3.686)
+[13:56:10] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 13560 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[13:56:10] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[13:56:11] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42961 (http)
+[13:56:11] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42961"]
+[13:56:11] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[13:56:11] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[13:56:12] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[13:56:12] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1345 ms
+[13:56:12] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[13:56:12] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42961"]
+[13:56:12] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42961 (http) with context path ''
+[13:56:12] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 2.953 seconds (process running for 3.843)
+[14:02:16] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 17484 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[14:02:16] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[14:02:18] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[14:02:18] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[14:02:18] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[14:02:18] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[14:02:18] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[14:02:18] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 2089 ms
+[14:02:18] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 10044 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[14:02:18] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[14:02:20] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[14:02:20] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42960"]
+[14:02:20] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42960 (http) with context path ''
+[14:02:20] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 4.617 seconds (process running for 5.261)
+[14:02:21] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42961 (http)
+[14:02:21] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42961"]
+[14:02:21] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[14:02:21] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[14:02:21] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[14:02:21] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 2602 ms
+[14:02:22] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[14:02:22] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42961"]
+[14:02:22] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42961 (http) with context path ''
+[14:02:22] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 5.031 seconds (process running for 6.042)
+[14:12:54] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 14188 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[14:12:54] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[14:12:56] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[14:12:56] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[14:12:56] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[14:12:56] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[14:12:56] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[14:12:56] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1329 ms
+[14:12:56] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[14:12:56] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42960"]
+[14:12:57] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42960 (http) with context path ''
+[14:12:57] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 2.66 seconds (process running for 3.23)
+[14:13:14] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 6220 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[14:13:14] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[14:13:15] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42961 (http)
+[14:13:15] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42961"]
+[14:13:15] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[14:13:15] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[14:13:15] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[14:13:15] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1267 ms
+[14:13:16] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[14:13:16] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42961"]
+[14:13:16] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42961 (http) with context path ''
+[14:13:16] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 2.64 seconds (process running for 3.227)
+[14:13:58] [INFO] [http-nio-42960-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:13:58] [INFO] [http-nio-42960-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[14:13:58] [INFO] [http-nio-42960-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 1 ms
+[14:42:36] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[14:42:36] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 19244 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[14:42:36] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[14:42:38] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+java.lang.IllegalArgumentException: Could not find class [org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:333)
+	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:465)
+	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:390)
+	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:278)
+	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:193)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:106)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:81)
+	at org.springframework.context.annotation.AnnotationConfigUtils.attributesFor(AnnotationConfigUtils.java:301)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:102)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:81)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:160)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:11)
+Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:283)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:323)
+	... 25 common frames omitted
+[14:42:38] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[14:42:38] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 19852 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[14:42:38] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[14:42:39] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+java.lang.IllegalArgumentException: Could not find class [org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:333)
+	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:465)
+	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:390)
+	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:278)
+	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:193)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:106)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:81)
+	at org.springframework.context.annotation.AnnotationConfigUtils.attributesFor(AnnotationConfigUtils.java:301)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:102)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:81)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:160)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:11)
+Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:283)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:323)
+	... 25 common frames omitted
+[15:58:08] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[15:58:08] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 20248 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[15:58:08] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[15:58:09] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+java.lang.IllegalArgumentException: Could not find class [org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:333)
+	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:465)
+	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:390)
+	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:278)
+	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:193)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:106)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:81)
+	at org.springframework.context.annotation.AnnotationConfigUtils.attributesFor(AnnotationConfigUtils.java:301)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:102)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:81)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:160)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:13)
+Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:283)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:323)
+	... 25 common frames omitted
+[15:58:10] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[15:58:10] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 12428 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[15:58:10] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[15:58:11] [ERROR] [main] [org.springframework.boot.SpringApplication:820]: Application run failed
+java.lang.IllegalArgumentException: Could not find class [org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:333)
+	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:465)
+	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:390)
+	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:278)
+	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:193)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:106)
+	at org.springframework.core.type.AnnotatedTypeMetadata.getAnnotationAttributes(AnnotatedTypeMetadata.java:81)
+	at org.springframework.context.annotation.AnnotationConfigUtils.attributesFor(AnnotationConfigUtils.java:301)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:102)
+	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:81)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:160)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:141)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.infotel.elk.ElkApplication.main(ElkApplication.java:13)
+Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:283)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:323)
+	... 25 common frames omitted
+[16:03:29] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[16:03:29] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 19844 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[16:03:29] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[16:03:30] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=6d0bc234-4a23-3dc9-a721-aba52caf5d4e
+[16:03:31] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[16:03:31] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[16:03:31] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[16:03:31] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[16:03:31] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[16:03:31] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1726 ms
+[16:03:32] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[16:03:32] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 20376 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[16:03:32] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[16:03:33] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[16:03:33] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[16:03:33] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42960"]
+[16:03:33] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42960 (http) with context path ''
+[16:03:33] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='elk-0', name='microserviceElk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=42960, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:42960/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[16:03:34] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=6d0bc234-4a23-3dc9-a721-aba52caf5d4e
+[16:03:34] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 4.85 seconds (process running for 5.407)
+[16:03:34] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42961 (http)
+[16:03:34] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42961"]
+[16:03:34] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[16:03:34] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[16:03:34] [INFO] [http-nio-42960-exec-4] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:03:34] [INFO] [http-nio-42960-exec-4] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[16:03:34] [INFO] [http-nio-42960-exec-4] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 3 ms
+[16:03:34] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[16:03:34] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 2490 ms
+[16:03:36] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[16:03:36] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[16:03:36] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42961"]
+[16:03:36] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42961 (http) with context path ''
+[16:03:36] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='microserviceELK-1', name='microserviceElk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=42961, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:42961/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[16:03:36] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 5.068 seconds (process running for 5.803)
+[16:03:44] [INFO] [http-nio-42961-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:03:44] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[16:03:44] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 1 ms
+[16:13:51] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[16:13:52] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 19944 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[16:13:52] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[16:13:54] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=6d0bc234-4a23-3dc9-a721-aba52caf5d4e
+[16:13:54] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[16:13:54] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 12652 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[16:13:54] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[16:13:55] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[16:13:55] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[16:13:55] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[16:13:55] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[16:13:55] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[16:13:55] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 3164 ms
+[16:13:57] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=6d0bc234-4a23-3dc9-a721-aba52caf5d4e
+[16:13:57] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42961 (http)
+[16:13:57] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42961"]
+[16:13:57] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[16:13:57] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[16:13:57] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[16:13:57] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 3012 ms
+[16:13:58] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[16:13:58] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[16:13:58] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42960"]
+[16:13:58] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42960 (http) with context path ''
+[16:13:58] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='elk-0', name='slk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=42960, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:42960/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[16:13:58] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 7.104 seconds (process running for 7.964)
+[16:13:59] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[16:13:59] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[16:13:59] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42961"]
+[16:13:59] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42961 (http) with context path ''
+[16:13:59] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='microserviceELK-1', name='slk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=42961, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:42961/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[16:13:59] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 5.831 seconds (process running for 7.274)
+[16:14:01] [INFO] [http-nio-42960-exec-3] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:14:01] [INFO] [http-nio-42960-exec-3] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[16:14:01] [INFO] [http-nio-42960-exec-3] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 1 ms
+[16:14:04] [INFO] [http-nio-42961-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:14:04] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[16:14:04] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 2 ms
+[16:19:37] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[16:19:37] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 12788 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[16:19:37] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[16:19:39] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=6d0bc234-4a23-3dc9-a721-aba52caf5d4e
+[16:19:39] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[16:19:39] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[16:19:39] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[16:19:39] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[16:19:39] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[16:19:39] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1606 ms
+[16:19:40] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[16:19:40] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 14868 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[16:19:40] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[16:19:41] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[16:19:41] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[16:19:41] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42960"]
+[16:19:41] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42960 (http) with context path ''
+[16:19:41] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='elk-0', name='elk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=42960, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:42960/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[16:19:42] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 4.604 seconds (process running for 5.165)
+[16:19:42] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=6d0bc234-4a23-3dc9-a721-aba52caf5d4e
+[16:19:42] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42961 (http)
+[16:19:42] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42961"]
+[16:19:42] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[16:19:42] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[16:19:42] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[16:19:42] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 2264 ms
+[16:19:44] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[16:19:44] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[16:19:44] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42961"]
+[16:19:44] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42961 (http) with context path ''
+[16:19:44] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='elk-1', name='elk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=42961, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:42961/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[16:19:44] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 4.617 seconds (process running for 5.394)
+[16:19:45] [INFO] [http-nio-42961-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:19:45] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[16:19:45] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 0 ms
+[16:19:48] [INFO] [http-nio-42960-exec-3] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:19:48] [INFO] [http-nio-42960-exec-3] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[16:19:48] [INFO] [http-nio-42960-exec-3] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 1 ms

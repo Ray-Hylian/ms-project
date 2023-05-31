@@ -1,0 +1,71 @@
+server.port: ${port.gateway}
+
+spring:
+  application:
+    name: gateway
+  zipkin:
+    base-url: ${zipkin.url}
+  cloud:
+    consul:
+      discovery:
+        instanceId:
+    discovery:
+      enabled: true
+      locator:
+        enabled: true
+    gateway:
+      routes:
+      - id: microservice1
+        uri: http://localhost:8081/
+        filters:
+        - name: CircuitBreaker
+          args:
+            name: microservice1
+            fallbackUri: forward:/messageFallback
+        predicates:
+        - Path=/employee/**
+      - id: microservice2
+        uri: http://localhost:8082/
+        filters:
+        - name: CircuitBreaker
+          args:
+            name: microservice2
+            fallbackUri: forward:/messageFallback
+        predicates:
+        - Path=/consumer/**
+      - id: elk1
+        uri: http://localhost:42960/
+        filters:
+        - name: CircuitBreaker
+          args:
+            name: elk1
+            fallbackUri: forward:/messageFallback
+        predicates:
+        - Path=/api/**
+      - id: elk2
+        uri: http://localhost:42961/
+        filters:
+        - name: CircuitBreaker
+          args:
+            name: elk2
+            fallbackUri: forward:/messageFallback
+        predicates:
+        - Path=/api/**
+  circuitbreaker:
+    config:
+      microservice1:
+        enabled: true
+        forceOpen: false
+        forceClosed: false
+        ringBufferSizeInClosedState: 20
+        failureRateThreshold: 50
+        waitDurationInOpenState: 5s
+        ringBufferSizeInHalfOpenState: 10
+      microservice2:
+        enabled: true
+        forceOpen: false
+        forceClosed: false
+        ringBufferSizeInClosedState: 20
+        failureRateThreshold: 50
+        waitDurationInOpenState: 5s
+        ringBufferSizeInHalfOpenState: 10

@@ -1,0 +1,22 @@
+server.port: ${port.microservice1}
+spring:
+  cloud:
+    discovery:
+      locator:
+        enabled: 'true'
+      enabled: 'true'
+    consul:
+      discovery:
+        serviceName: microservice1
+        instanceId: microservice1
+  zipkin:
+    base-url: ${zipkin.url}
+    sender:
+      type: web
+  application:
+    name: microservice1
+  sleuth:
+    sampler:
+      probability: '0.8'
+logging:
+  config: classpath:logback.xml

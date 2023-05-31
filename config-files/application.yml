@@ -1,0 +1,18 @@
+#ports
+port:
+  config-client: 8090'
+  config-server: '8888'
+  elk: '9000'
+  gateway: '8000'
+  microservice1: '8081'
+  microservice2: '8082'
+
+#url
+traefik:
+  url: http://localhost:8080
+consul:
+  url: http://localhost:8500
+vault:
+  url: http://localhost:8200
+zipkin:
+  url: http://localhost:9411/

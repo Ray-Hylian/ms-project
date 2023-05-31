@@ -1,0 +1,15 @@
+server.port: 9000
+
+logging:
+  config: classpath:logback.xml
+  
+spring:
+  zipkin:
+    base-url: ${zipkin.url}
+    sender:
+      type: web
+  application:
+    name: elk
+  sleuth:
+    sampler:
+      probability: '0.8'

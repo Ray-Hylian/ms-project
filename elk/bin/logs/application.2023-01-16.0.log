@@ -1,0 +1,95 @@
+[10:13:36] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[10:13:36] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 3716 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[10:13:36] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[10:13:37] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=6d0bc234-4a23-3dc9-a721-aba52caf5d4e
+[10:13:37] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[10:13:37] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[10:13:37] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[10:13:37] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[10:13:37] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[10:13:37] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1594 ms
+[10:13:40] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[10:13:40] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[10:13:40] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42960"]
+[10:13:40] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[10:13:40] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42960 (http) with context path ''
+[10:13:40] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='elk-0', name='elk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=42960, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:42960/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[10:13:40] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 5944 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[10:13:40] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[10:13:40] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 5.043 seconds (process running for 5.843)
+[10:13:41] [INFO] [http-nio-42960-exec-4] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[10:13:41] [INFO] [http-nio-42960-exec-4] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[10:13:41] [INFO] [http-nio-42960-exec-4] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 2 ms
+[10:13:42] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=6d0bc234-4a23-3dc9-a721-aba52caf5d4e
+[10:13:42] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42961 (http)
+[10:13:42] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42961"]
+[10:13:42] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[10:13:42] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[10:13:42] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[10:13:42] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 2262 ms
+[10:13:45] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[10:13:45] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[10:13:45] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42961"]
+[10:13:45] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42961 (http) with context path ''
+[10:13:45] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='elk-1', name='elk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=42961, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:42961/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[10:13:46] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 6.52 seconds (process running for 7.704)
+[10:13:47] [INFO] [http-nio-42961-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[10:13:47] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[10:13:47] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 9 ms
+[14:25:59] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[14:25:59] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 18568 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[14:25:59] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[14:26:01] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=6d0bc234-4a23-3dc9-a721-aba52caf5d4e
+[14:26:01] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[14:26:01] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[14:26:01] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[14:26:01] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[14:26:01] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[14:26:01] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1645 ms
+[14:26:03] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[14:26:03] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[14:26:03] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42960"]
+[14:26:03] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42960 (http) with context path ''
+[14:26:03] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='elk-0', name='elk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=42960, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:42960/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[14:26:03] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 3.89 seconds (process running for 4.505)
+[14:26:08] [INFO] [http-nio-42960-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:26:08] [INFO] [http-nio-42960-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[14:26:08] [INFO] [http-nio-42960-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 2 ms
+[15:52:47] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[15:52:48] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 6756 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[15:52:48] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[15:52:49] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=6d0bc234-4a23-3dc9-a721-aba52caf5d4e
+[15:52:49] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42960 (http)
+[15:52:49] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42960"]
+[15:52:49] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[15:52:49] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[15:52:49] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[15:52:49] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1522 ms
+[15:52:51] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[15:52:51] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[15:52:51] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42960"]
+[15:52:51] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42960 (http) with context path ''
+[15:52:51] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='elk-0', name='elk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=42960, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:42960/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[15:52:51] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 3.615 seconds (process running for 4.199)
+[15:52:51] [INFO] [http-nio-42960-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:52:51] [INFO] [http-nio-42960-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[15:52:51] [INFO] [http-nio-42960-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 3 ms
+[15:52:54] [INFO] [background-preinit] [org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 8.0.0.Final
+[15:52:54] [INFO] [main] [com.infotel.elk.ElkApplication:51]: Starting ElkApplication using Java 17.0.3 with PID 19412 (C:\Dev_RBO\repo\msoutils\ms-project\elk\target\classes started by r_boug in C:\Dev_RBO\repo\msoutils\ms-project\elk)
+[15:52:54] [INFO] [main] [com.infotel.elk.ElkApplication:630]: No active profile set, falling back to 1 default profile: "default"
+[15:52:55] [INFO] [main] [org.springframework.cloud.context.scope.GenericScope:282]: BeanFactory id=6d0bc234-4a23-3dc9-a721-aba52caf5d4e
+[15:52:55] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:114]: Tomcat initialized with port(s): 42961 (http)
+[15:52:55] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Initializing ProtocolHandler ["http-nio-42961"]
+[15:52:55] [INFO] [main] [org.apache.catalina.core.StandardService:173]: Starting service [Tomcat]
+[15:52:56] [INFO] [main] [org.apache.catalina.core.StandardEngine:173]: Starting Servlet engine: [Apache Tomcat/10.1.1]
+[15:52:56] [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring embedded WebApplicationContext
+[15:52:56] [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:291]: Root WebApplicationContext: initialization completed in 1538 ms
+[15:52:57] [WARN] [main] [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[15:52:57] [INFO] [main] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58]: Exposing 1 endpoint(s) beneath base path '/actuator'
+[15:52:57] [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173]: Starting ProtocolHandler ["http-nio-42961"]
+[15:52:57] [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:226]: Tomcat started on port(s): 42961 (http) with context path ''
+[15:52:57] [INFO] [main] [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65]: Registering service with consul: NewService{id='elk-1', name='elk', tags=[], address='PN-N-0288.sesame.infotel.com', meta={secure=false}, port=42961, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://PN-N-0288.sesame.infotel.com:42961/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[15:52:57] [INFO] [main] [com.infotel.elk.ElkApplication:57]: Started ElkApplication in 3.669 seconds (process running for 4.216)
+[15:53:01] [INFO] [http-nio-42961-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:53:01] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:525]: Initializing Servlet 'dispatcherServlet'
+[15:53:01] [INFO] [http-nio-42961-exec-1] [org.springframework.web.servlet.DispatcherServlet:547]: Completed initialization in 2 ms
